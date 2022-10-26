@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;600;700&display=swap");
+
+.mainContentContainer {
+  width: 100%;
+  height: calc(100vh - 75px);
+
+  margin-top: 75px;
+
+  background: linear-gradient(
+    180deg,
+    #f7f6dc 50%,
+    rgba(247, 246, 220, 0) 99.99%,
+    rgba(247, 246, 220, 0) 100%
+  );
+}
+
+.mainContentContainer .headTextSoft {
+  width: 100%;
+  text-align: center;
+
+  padding: 36px 0px;
+}
+
+.mainContentContainer .headTextSoft span {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #151818;
+}
+
+.mainContentContainer .ayahContainer {
+  width: 100%;
+  padding: 36px 0px;
+  text-align: center;
+  margin: 0 auto;
+
+  transition: all 0.2s ease;
+}
+
+.mainContentContainer .ayahContainer p {
+  width: fit-content;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #151818;
+  padding: 24px;
+  box-shadow: 0px 6px 20px rgba(9, 34, 39, 0.1);
+  border-radius: 10px;
+  border: 2px solid #f7f6dc;
+  margin: 0 auto;
+  transition: all 1s ease;
+}
+
+.mainContentContainer .correctGuessed p {
+  border: 2px solid rgba(28, 103, 88, 1);
+}
+
+.mainContentContainer .wrongGuessed p {
+  border: 2px solid red;
+}
+
+.mainContentContainer .quizAnswerContainer {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mainContentContainer .quizAnswerContainer .surahNoContainer {
+  display: flex;
+  margin: 13px 0px;
+}
+
+.mainContentContainer .quizAnswerContainer .surahNoContainer input {
+  border: 0;
+  outline: none;
+  width: 60px;
+  border-bottom: 2px solid #151818;
+  margin: 0 8px;
+
+  font-family: "Quicksand-Regular";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #151818;
+
+  background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.mainContentContainer
+  .quizAnswerContainer
+  .surahNoContainer
+  input::-webkit-outer-spin-button,
+.mainContentContainer
+  .quizAnswerContainer
+  .surahNoContainer
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.mainContentContainer
+  .quizAnswerContainer
+  .surahNoContainer
+  input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.mainContentContainer .quizAnswerContainer p {
+  font-family: "Quicksand-Regular";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #151818;
+}
+
+.mainContentContainer .rewardAndNextChallengeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContentContainer .rewardAndNextChallengeContainer img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin: 40px 0;
+}
+
+.mainContentContainer .rewardAndNextChallengeContainer .nextChallengeText {
+  font-family: "Quicksand-Bold", sans-serif;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #151818;
+}
+
+/* media queries */
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .mainContentContainer .headTextSoft {
+    width: 100%;
+    text-align: center;
+    padding: 36px 0px;
+  }
+
+  .mainContentContainer .headTextSoft span {
+    font-size: 16px;
+  }
+
+  .mainContentContainer .ayahContainer {
+    width: 90%;
+
+    padding: 0 0px;
+  }
+
+  .mainContentContainer .ayahContainer p {
+    font-size: 20px;
+  }
+
+  .mainContentContainer .quizAnswerContainer p {
+    font-size: 14px;
+  }
+
+  .mainContentContainer .quizAnswerContainer .surahNoContainer input {
+    font-size: 14px;
+  }
+}

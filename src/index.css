@@ -1,13 +1,30 @@
-body {
+/* on desktop 4px up text double the padding margin spacing etc */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Quicksand-Light";
+  src: local("Quicksand-Light"),
+    url("./assets/fonts/quicksand/Quicksand-Light.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: local("Quicksand-Regular"),
+    url("./assets/fonts/quicksand/Quicksand-Regular.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: local("Quicksand-Bold"),
+    url("./assets/fonts/quicksand/Quicksand-Bold.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Quicksand-Italic";
+  src: local("Quicksand-Italic"),
+    url("./assets/fonts/quicksand/Quicksand-Italic.otf") format("woff");
 }
